@@ -11,8 +11,8 @@ else:
 		port = 5000
 
 import sys
-print(sys.argv)
+print(sys.argv[len(sys.argv)-1])
 sys.stdout.flush()
 
 if __name__ == '__main__':
-	socketio.run(app, logger=True, engineio_logger=True, port=port)
+	socketio.run(app, logger=True, engineio_logger=True, port=int(sys.argv[len(sys.argv)-1]))
