@@ -1,5 +1,5 @@
 from app import create_app, socketio
-
+import os
 app = create_app(debug=True)
 
 if os.environ.get('PORT'):
