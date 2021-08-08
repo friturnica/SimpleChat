@@ -16,4 +16,3 @@ python-socketio
 six
 Werkzeug
 WTForms
-flaskapp
