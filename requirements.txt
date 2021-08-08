@@ -6,6 +6,7 @@ Flask
 Flask-SocketIO
 Flask-WTF
 greenlet
+gunicorn
 itsdangerous
 Jinja2
 MarkupSafe
