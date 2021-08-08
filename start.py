@@ -8,4 +8,4 @@ else:
 	port = 5000
 
 if __name__ == '__main__':
-	socketio.run(app, port=port)
+	socketio.run(app, logger=True, engineio_logger=True, port=port)
