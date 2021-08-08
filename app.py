@@ -1,12 +1,6 @@
-from flask import Flask
-from flask_socketio import SocketIO
+from app import create_app, socketio
 
-app = Flask(__name__)
-socketio = SocketIO(app)
+app = create_app(debug=True)
 
-@app.route("/")
-def index():
-	return render_template('index.html',)
-
-if __name__ == "__main__":
-	socketio.run(app)
+if __name__ == '__main__':
+    socketio.run(app)
