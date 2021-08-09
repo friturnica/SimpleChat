@@ -1,9 +1,8 @@
-wheel
 Click
 dnspython
-eventlet==0.30.2
-Flask
-Flask-SocketIO
+eventlet==0.25.1
+Flask==1.1.2
+Flask-SocketIO==4.2.1
 Flask-WTF
 greenlet
 gunicorn
@@ -11,8 +10,8 @@ itsdangerous
 Jinja2
 MarkupSafe
 monotonic
-python-engineio
-python-socketio
+python-engineio==3.12.1
+python-socketio==4.4.0
 six
 Werkzeug
 WTForms

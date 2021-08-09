@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_socketio import SocketIO
 
+socketio = SocketIO(cors_allowed_origins='https://frit-chat.herokuapp.com', async_mode='eventlet')
+
 def create_app(debug=False):
     """Create an application."""
     app = Flask(__name__)
@@ -10,6 +12,6 @@ def create_app(debug=False):
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
-    socketio = SocketIO(app, logger=True, engineio_logger=True)
+    socketio.init_app(app)
     return app
 
