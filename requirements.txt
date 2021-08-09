@@ -1,7 +1,7 @@
 wheel
 Click
 dnspython
-eventlet
+eventlet==0.30.2
 Flask
 Flask-SocketIO
 Flask-WTF
