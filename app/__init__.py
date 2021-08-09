@@ -1,7 +1,8 @@
 from flask import Flask
 from flask_socketio import SocketIO
 
-socketio = SocketIO(cors_allowed_origins="*", async_mode='gevent')
+#socketio = SocketIO(cors_allowed_origins="*", async_mode='gevent')
+socketio = SocketIO()
 
 def create_app(debug=False):
     """Create an application."""

@@ -1,14 +1,20 @@
 <html>
     <head>
         <title>чат фрита</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1>чат на сокет ио от фрита</h1>
-        <form method="POST">
-            {{ form.hidden_tag() }}
-            {{ form.name.label }}: {{ form.name() }} {% for error in form.name.errors %}{{ error }}{% endfor %}<br><br>
-            {{ form.room.label }}: {{ form.room() }} {% for error in form.room.errors %}{{ error }}{% endfor %}<br><br>
-            {{ form.submit() }}
-        </form>
+        <div class="container" style="text-align: center;">
+            <h2>SimpeChat by fr1t</h2>
+            <div style="width: 300px; margin-left: auto; margin-right: auto;">
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+                    {{ form.name.label }}: {{ form.name(class_="form-control") }} {% for error in form.name.errors %}{{ error }}{% endfor %}<br>
+                    {{ form.room.label }}: {{ form.room(class_="form-control") }} {% for error in form.room.errors %}{{ error }}{% endfor %}<br>
+                    {{ form.submit(class_="btn btn-primary") }}
+                </form>
+            </div>
+        </div>
     </body>
 </html>
