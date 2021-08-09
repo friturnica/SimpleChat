@@ -1,6 +1,6 @@
 Click
 dnspython
-gevent
+geventwebsocket
 Flask==1.1.2
 Flask-SocketIO==4.2.1
 Flask-WTF
