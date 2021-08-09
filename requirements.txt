@@ -1,8 +1,9 @@
 Click
 dnspython
-geventwebsocket
-Flask==1.1.2
-Flask-SocketIO==4.2.1
+gevent==1.4.0
+gevent-websocket==0.10.1
+Flask
+Flask-SocketIO
 Flask-WTF
 greenlet
 gunicorn
@@ -10,8 +11,8 @@ itsdangerous
 Jinja2
 MarkupSafe
 monotonic
-python-engineio==3.12.1
-python-socketio==4.4.0
+python-engineio
+python-socketio
 six
 Werkzeug
 WTForms
