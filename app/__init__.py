@@ -3,9 +3,6 @@ from flask_socketio import SocketIO
 
 socketio = SocketIO(async_mode='eventlet')
 
-import eventlet
-eventlet.monkey_patch()
-
 def create_app(debug=False):
     """Create an application."""
     app = Flask(__name__)
