@@ -4,8 +4,8 @@ Flask-Login==0.4.1
 Flask-SocketIO==3.3.2
 Flask-SQLAlchemy==2.3.2
 Flask-WTF==0.14.2
-gevent==1.4.0
-gevent-websocket==0.10.1
+gevent==20.9.0
+gevent-websocket
 greenlet==0.4.15
 gunicorn==19.9.0
 itsdangerous==1.1.0
