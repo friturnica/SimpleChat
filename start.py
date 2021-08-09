@@ -15,4 +15,4 @@ print(sys.argv[len(sys.argv)-1])
 sys.stdout.flush()
 
 if __name__ == '__main__':
-	socketio.run(app, logger=True, engineio_logger=True, port=int(sys.argv[len(sys.argv)-1]))
+	socketio.run(app, logger=True, engineio_logger=True)
