@@ -16,6 +16,8 @@ def joined(message):
 def text(message):
     """Sent by a client when the user entered a new message.
     The message is sent to all people in the room."""
+    if message['msg'].strip() == "" or len(message['msg'])>96:
+    	return
     room = session.get('room')
     emit('message', {'msg': session.get('name') + ': ' + message['msg']}, room=room)
 
