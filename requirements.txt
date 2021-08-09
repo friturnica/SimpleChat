@@ -1,12 +1,12 @@
 wheel
 Click
 dnspython
-eventlet==0.30.0
+eventlet
 Flask
 Flask-SocketIO
 Flask-WTF
 greenlet
-gunicorn==20.1.0
+gunicorn
 itsdangerous
 Jinja2
 MarkupSafe
