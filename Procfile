@@ -1,1 +1,1 @@
-web: gunicorn -k eventlet -w 1 start:app $PORT
+web: gunicorn -k eventlet -w 1 start:app -b 127.0.0.1:5000
